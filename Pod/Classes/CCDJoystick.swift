@@ -53,7 +53,7 @@ public class CCDJoystick: UIView {
     }
     
     private func setup() {        
-        displayLink = CADisplayLink(target: self, selector: "listen")
+        displayLink = CADisplayLink(target: self, selector: #selector(CCDJoystick.listen))
         displayLink?.addToRunLoop(.currentRunLoop(), forMode: NSRunLoopCommonModes)
     }
     
