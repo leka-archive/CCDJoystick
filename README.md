@@ -1,14 +1,14 @@
-# CDJoystick
+# CCDJoystick
 
-[![Version](https://img.shields.io/cocoapods/v/CDJoystick.svg?style=flat)](http://cocoapods.org/pods/CDJoystick)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://cocoapods.org/pods/CDJoystick)
-[![Platform](https://img.shields.io/cocoapods/p/CDJoystick.svg?style=flat)](http://cocoapods.org/pods/CDJoystick)
+[![Version](https://img.shields.io/cocoapods/v/CCDJoystick.svg?style=flat)](http://cocoapods.org/pods/CCDJoystick)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://cocoapods.org/pods/CCDJoystick)
+[![Platform](https://img.shields.io/cocoapods/p/CCDJoystick.svg?style=flat)](http://cocoapods.org/pods/CCDJoystick)
 [![Language](http://img.shields.io/badge/language-swift-orange.svg?style=flat
              )](https://developer.apple.com/swift/)
 
 ## What is it?
 
-CDJoystick is a Joystick for UIKit.
+CCDJoystick is a Joystick for UIKit.
 
 It is written in Swift 2 and uses `IBDesignable`, `IBInspectable` and Core Graphics.
 
@@ -18,32 +18,32 @@ CDJoystick is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```
-pod "CDJoystick"
+pod "CCDJoystick"
 ```
 
-Alternatively, you can install it manually by copying the file `Pod/Classes/CDJoystick.swift` into your project.
+Alternatively, you can install it manually by copying the file `Pod/Classes/CCDJoystick.swift` into your project.
 
 
 ## Usage (Storyboards)
 
 1. Drag a UIView into your storyboard.
-2. Change the class of the UIView to `CDJoystick`.
+2. Change the class of the UIView to `CCDJoystick`.
 3. Customize your joystick using the inspector.
 
-![alt tag](https://github.com/Coledunsby/CDJoystick/blob/master/Images/Storyboard.png)
+![alt tag](https://github.com/tzraikov/CCDJoystick/blob/master/Images/Storyboard.png)
 
 ## Usage (Programmatically)
 
 1. Import the module:
 
     ```
-    import CDJoystick
+    import CCDJoystick
     ```
 
 2. Initialize an instance of `CDJoystick` using the constructor:
 
     ```
-    let joystick = CDJoystick()
+    let joystick = CCDJoystick()
     joystick.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
     joystick.backgroundColor = .clearColor()
     ```
@@ -80,6 +80,8 @@ Alternatively, you can install it manually by copying the file `Pod/Classes/CDJo
 
 Cole Dunsby, coledunsby@gmail.com
 
+> modified by Tsvetan Raikov to support ObjC
+
 ## License
 
-CDJoystick is available under the MIT license. See the LICENSE file for more info.
+CCDJoystick is available under the MIT license. See the LICENSE file for more info.

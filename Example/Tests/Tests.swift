@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import CDJoystick
+import CCDJoystick
 
 class Tests: XCTestCase {
     

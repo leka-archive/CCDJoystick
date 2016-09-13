@@ -1,0 +1,6 @@
+framework module Pods_CCDJoystick_Tests {
+  umbrella header "Pods-CCDJoystick_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
