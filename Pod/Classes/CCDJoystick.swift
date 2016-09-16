@@ -12,6 +12,12 @@ import UIKit
 public class CCDJoystickData: NSObject {
     public var velocity: CGPoint = .zero
     public var angle: CGFloat = 0.0
+    public var x: Float {
+        get { return Float(self.velocity.x) }
+    }
+    public var y: Float {
+        get { return Float(self.velocity.y) }
+    }
 }
 
 @IBDesignable
@@ -126,6 +132,9 @@ public class CCDJoystick: UIView {
     private func reset() {
         tracking = false
         data = CCDJoystickData()
+        if (trackingHandler != nil) {
+            trackingHandler?(data)
+        }
         
         UIView.animateWithDuration(0.25) { () -> Void in
             self.stickView.center = CGPoint(x: self.bounds.width / 2, y: self.bounds.height / 2)
