@@ -9,12 +9,17 @@
 
 import UIKit
 
+@objc(CCDJoystickData)
 public class CCDJoystickData: NSObject {
+    @objc(velocity)
     public var velocity: CGPoint = .zero
+    @objc(angle)
     public var angle: CGFloat = 0.0
+    @objc(x)
     public var x: Float {
         get { return Float(self.velocity.x) }
     }
+    @objc(y)
     public var y: Float {
         get { return Float(self.velocity.y) }
     }

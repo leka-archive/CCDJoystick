@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name              = "CCDJoystick"
-    s.version           = "0.1.2"
+    s.version           = "0.1.3"
     s.summary           = "Joystick for UIKit"
     s.homepage          = "https://github.com/tzraikov/CCDJoystick"
     # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
