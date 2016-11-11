@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
 	spec.authors            = { "Tsvetan Raikov" => "tzraikov@abv.bg",
 							 "Gareth Dys" => "gareth@leka.io",
 							 "Ladislas de Toldi" => "ladislas@leka.io" }
-	spec.source            = { :git => "https://github.com/weareleka/CCDJoystick.git" }
+	spec.source            = { :git => "https://github.com/weareleka/CCDJoystick.git", :tag => '0.2.0'}
 	spec.platform          = :ios, '8.0'
 	spec.requires_arc      = true
 	spec.source_files      = 'Pod/Classes/**/*'
